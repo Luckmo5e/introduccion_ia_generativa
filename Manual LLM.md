@@ -1,9 +1,9 @@
-#LLM Pruebas
+<h1>LLM Pruebas</h1>
 
 Repositiorio
 
 
-#1. Intalacion 
+<h1>1. Intalacion </h1>
 
 Como primer paso descargamos [ollama]
 (https://ollama.com/download/linux) de su pagina web, y ejecutamos el 
@@ -13,7 +13,7 @@ siguiente comando:
 $ curl -fsSL https://ollama.com/install.sh | sh
 ````
 
-##2. Ejecutar el servidor 
+<h1>2. Ejecutar el servidor </h1>
 
 Una vez que se descargo e instalo ollama se puede iniciar y detener su ejecución para que no se ejecute en segundo plano.
 
@@ -22,7 +22,7 @@ Para iniciar el servidor se ejecuta el siguiente comando:
 $ollama serve
 ````
 
-##3. Descargar un modelo 
+<h1>3. Descargar un modelo</h1> 
 
 en la pagina web de ollama utilizar la siguiente URL [Modelo] (https://ollama.com/library)
 
@@ -31,7 +31,7 @@ $ollama pull tinyollama
 ````
 
 
-##4. Algunos comandos importantes 
+<h1>4. Algunos comandos importantes </h1>
 
 ````
 $ollama list # Permite visualizar las maquinas que se encuentran cargadas 
@@ -39,13 +39,13 @@ $ollama list # Permite visualizar las maquinas que se encuentran cargadas
 ````
 
 
-##5. Repositorios Importantes 
+<h1>5. Repositorios Importantes </h1>
 ````
 [API] (https://github.com/ollama/ollama/blob/main/docs/api.md)
 ````
 
 
-##5. Realizar un Request sin Stream
+<h1>5. Realizar un Request sin Stream</h1>
 
 El stream= False permite generar el response en una unica linea 
 ````
@@ -67,7 +67,9 @@ curl http://localhost:11434/api/generate -d '{
 } 
 ````
 
-##6. Guardar los cambios en Github
+<h1>6. Guardar los cambios en Github</h1>
 ````
 $git add
-$git commit
+$git commit -m "UPDATE Manual LLM v2.md"
+$git push -u origin main
+````
