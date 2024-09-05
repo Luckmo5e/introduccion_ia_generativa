@@ -68,10 +68,12 @@ curl http://localhost:11434/api/generate -d '{
 ````
 
 <h1>6. Guardar los cambios en Github</h1>
+
 ````
-##$git add .
-##$git commit -m "UPDATE Manual LLM v2.md"
-##$git push -u origin main
+## $git add .
+## $git commit -m "UPDATE Manual LLM v2.md"
+## $git push -u origin main
+
 ````
 
 <h1>Como ingrear a GroqCloud y generar una API Key</h1>
@@ -133,3 +135,35 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 - Revoca cualquier clave que creas que ha sido comprometida inmediatamente desde la sección **API Keys** del panel de control de GroqCloud.
 - Puedes generar varias claves para diferentes proyectos o servicios según sea necesario.
 
+
+
+# Mini Manual: Consultar y Utilizar el Método `POST` de Requests en Python
+
+## 1. Consultar la Documentación del Método `POST` en W3Schools
+
+1. Abre tu navegador web.
+2. Ve a la siguiente URL: [W3Schools: Python Requests POST](https://www.w3schools.com/python/ref_requests_post.asp).
+3. En esta página, encontrarás ejemplos y explicaciones sobre cómo utilizar el método `POST` del módulo `requests` en Python. A continuación, se detalla cómo hacer solicitudes `POST`.
+
+## 2. Ejemplo de Código Python con `POST`
+
+El método `POST` en Python se usa para enviar datos a un servidor. A continuación se muestra un ejemplo básico usando la biblioteca `requests`.
+
+```python
+import requests
+
+# URL a la que deseas enviar los datos
+url = 'https://example.com/api'
+
+# Datos a enviar en la solicitud POST
+data = {
+    'nombre': 'Juan',
+    'edad': 27
+}
+
+# Hacer la solicitud POST
+response = requests.post(url, data=data)
+
+# Imprimir la respuesta del servidor
+print(response.status_code)  # Código de estado de la respuesta
+print(response.text)         # Contenido de la respuesta
