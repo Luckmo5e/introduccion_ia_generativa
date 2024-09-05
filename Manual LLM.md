@@ -68,11 +68,11 @@ curl http://localhost:11434/api/generate -d '{
 ````
 
 <h1>6. Guardar los cambios en Github</h1>
-
+````
 ##$git add .
 ##$git commit -m "UPDATE Manual LLM v2.md"
 ##$git push -u origin main
-
+````
 
 <h1>Como ingrear a GroqCloud y generar una API Key</h1>
 
